@@ -10,7 +10,7 @@ object SourceDataLoading {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder
       .master("local[*]")
-      .appName("Sftp File to Dataframe")
+      .appName("Source Data Loading")
       .getOrCreate()
     spark.sparkContext.setLogLevel(Constants.ERROR)
     import spark.implicits._

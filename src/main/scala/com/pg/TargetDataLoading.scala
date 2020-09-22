@@ -9,8 +9,8 @@
     object TargetDataLoading {
       def main(args: Array[String]): Unit = {
         val spark = SparkSession.builder
-          .master("local[*]")
-          .appName("Sftp File to Dataframe")
+          //.master("local[*]")
+          .appName("Target Data Loading")
           .getOrCreate()
         spark.sparkContext.setLogLevel(Constants.ERROR)
 
